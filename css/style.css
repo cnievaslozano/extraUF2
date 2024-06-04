@@ -1,13 +1,36 @@
-body{
+body, html {
     margin: 0;
     padding: 0;
 }
-
 main {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    min-height: 900px;
-    text-align: center;
+    overflow: hidden;
+}
+.background {
+    margin-top: 5%;
+    width: 65%;
+    height: 65%;
+    object-fit: cover;
+}
+.nave {
+    position: absolute;
+    width: 400px; 
+    animation: landing 3s ease-in-out infinite;
+    animation-delay: 1s; /* Espera 1 segundo antes de comenzar la animación */
+
+}
+@keyframes landing {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        top: calc(100% - 350px); 
+    }
 }
