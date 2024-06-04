@@ -17,7 +17,7 @@ main {
 }
 .nave {
     position: absolute;
-    width: 400px; 
+    width: 30%; 
     animation: landing 3s ease-in-out infinite;
     animation-delay: 1s; /* Espera 1 segundo antes de comenzar la animación */
 
@@ -31,6 +31,6 @@ main {
         opacity: 1;
     }
     100% {
-        top: calc(100% - 350px); 
+        top: calc(100% - 450px); 
     }
 }
