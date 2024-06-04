@@ -5,12 +5,13 @@ body, html {
 main {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 .background {
-    margin-top: 5%;
+    margin-top: 1%;
     width: 65%;
     height: 65%;
     object-fit: cover;
@@ -18,10 +19,13 @@ main {
 .nave {
     position: absolute;
     width: 30%; 
-    animation: landing 3s ease-in-out infinite;
-    animation-delay: 1s; /* Espera 1 segundo antes de comenzar la animación */
+    /*animation: landing 3s ease-in-out infinite;*/
+    animation-delay: 1s;
 
 }
+
+/* ANIMACIÓ */
+
 @keyframes landing {
     0% {
         top: -100px;
@@ -31,6 +35,21 @@ main {
         opacity: 1;
     }
     100% {
-        top: calc(100% - 450px); 
+        top: calc(100% - 550px); 
     }
+}
+
+/* SVG */
+
+#playButton {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.outerCircle {
+    fill: #4CAF50;
+}
+.innerTriangle {
+    fill: #FFFFFF;
 }

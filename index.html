@@ -12,9 +12,14 @@
 <body>
     <main>
 
-        <img class="nave" src="./img/nau3.png" alt="Nau">
+        <img class="nave" id="nave" src="./img/nau3.png" alt="Nau">
         <img class="background" src="./img/fons.jpeg" alt="Paisatge de nit">
 
+        <svg id="playButton" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" class="outerCircle"></circle>
+            <polygon id="play" points="35,30 70,50 35,70" class="innerTriangle"></polygon>
+        </svg>
+        <audio id="audio" src="media/space-battle-sounds-cm-37833.mp3"></audio>
     </main>
     <footer>
         <p>Àudio de Pixabay: https://pixabay.com/es/users/pixabay-1/</p>
@@ -24,7 +29,7 @@
         <p>Àudio de nau: https://pixabay.com/es/sound-effects/search/nave%20espacial/</p>
         <p>Llicència d'àudio de nau: https://pixabay.com/es/service/license-summary/</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
