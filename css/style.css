@@ -10,6 +10,13 @@ main {
     align-items: center;
     overflow: hidden;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .background {
     margin-top: 1%;
     width: 65%;
@@ -20,7 +27,6 @@ main {
     position: absolute;
     width: 30%; 
     /*animation: landing 3s ease-in-out infinite;*/
-    animation-delay: 1s;
 
 }
 
